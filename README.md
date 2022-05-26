@@ -1,3 +1,3 @@
 # gitbook
 gitbook
-![](../img/01_00_00.png)
+![](../img/2c87c15257b3dd42fa32c7687816814a_1.jpg)
