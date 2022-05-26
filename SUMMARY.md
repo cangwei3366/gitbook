@@ -24,7 +24,7 @@
     * [垃圾回收器](java/jvm/la-ji-hui-shou-qi.md)
     * [JVM内存调优工具](java/jvm/jvm-nei-cun-tiao-you-gong-ju.md)
     * [版本特性](java/jvm/ban-ben-te-xing.md)
-* [🐜 架构设计](jia-gou-she-ji/README.md)
+* [🐜 架构设计](架构设计/README.md)
   * [高并发系统设计方案](jia-gou-she-ji/gao-bing-fa-xi-tong-she-ji-fang-an/README.md)
     * [缓存设计](jia-gou-she-ji/gao-bing-fa-xi-tong-she-ji-fang-an/huan-cun-she-ji.md)
     * [限流设计](jia-gou-she-ji/gao-bing-fa-xi-tong-she-ji-fang-an/xian-liu-she-ji.md)
