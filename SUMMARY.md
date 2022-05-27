@@ -1,6 +1,10 @@
 # Table of contents
 
 * [💻软工基础](README.md)
+  * [计算机网络](软工基础/计算机网络/README.md)
+  * [数据结构](软工基础/数据结构/README.md)
+  * [算法](软工基础/算法/README.md)
+
 * [🍊 Java](java/README.md)
   * [面向对象与基础](Java/面向对象基础.md)
   * [集合框架](Java/集合框架.md)
