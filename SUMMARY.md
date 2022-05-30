@@ -1,11 +1,11 @@
 # Table of contents
 
-* [💻软工基础](README.md)
+* [💻 软工基础](README.md)
   * [计算机网络](软工基础/计算机网络/README.md)
   * [数据结构](软工基础/数据结构/README.md)
   * [算法](软工基础/算法/README.md)
-
 * [🍊 Java](java/README.md)
+<<<<<<< HEAD
   * [面向对象与基础](Java/面向对象与基础/面向对象概念.md)
     * [反射机制解析](Java/面向对象与基础/反射机制详解.md)
     * [异常机制解析](Java/面向对象与基础/异常机制详解.md)
@@ -42,10 +42,10 @@
     * [全局唯一ID实现方案](架构设计/分布式系统设计方案/全局唯一ID实现方案.md)
     * [分布式锁实现方案](架构设计/分布式系统设计方案/分布式锁实现方案.md)
     * [分布式事务实现方案](架构设计/分布式系统设计方案/分布式事务实现方案.md)
-    * [分布式缓存实现方案](架构设计/分布式系统设计方案/分布式事务实现方案.md)
+    *
   * [系统架构设计案例](架构设计/系统架构设计案例.md)
   * [数据中心架构设计方案](架构设计/数据中心架构设计.md)
-* [🎩 BigData](Bigdata/README.md)
+* [☁ BigData](Bigdata/README.md)
   * [Hadoop](bigdata/hadoop.md)
   * [HBase](bigdata/hbase.md)
   * [Spark](bigdata/spark.md)
@@ -95,5 +95,5 @@
   * [剑指 Offer算法](算法/剑指Offer算法.md)
 * [🛡 运维](运维/README.md)
   * [Shell命令](运维/shell-命令.md)
-* [🖐 产品 | 团队](产品-团队/README.md)
+* [✊ 产品 | 团队](产品-团队/README.md)
   * [产品 - 方法论](产品-团队/产品-方法论.md)
