@@ -52,7 +52,7 @@ abstract static class Sync extends AbstractQueuedSynchronizer {
             setState(c);
             return free;
         }
-		// 判断资源是否被当前线程占有
+		// 
         protected final boolean isHeldExclusively() {
             // While we must in general read state before owner,
             // we don't need to do so to check if current thread is owner

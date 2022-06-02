@@ -9,7 +9,7 @@ tags:
   - 
 ---
 ## 知识体系结构
-![](../img/01_00_00.png)
+![](../../.gitbook/assets/01_00_00.png)
 
 ## Collection
 
