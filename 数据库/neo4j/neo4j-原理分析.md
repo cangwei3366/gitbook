@@ -1,4 +1,4 @@
-# Neo4j原理分析
+# Neo4j 原理分析
 
 ## 底层原理
 
@@ -18,12 +18,12 @@ Node 节点保存第1个属性和第1个关系ID。
 
 通过上述存储模型，从一个Node-A开始，可以方便的遍历以该Node-A为起点的图。
 
-示例1&#x20;
+示例1
 
 在这个例子中，A~~E表示Node 的编号，R1~~R7 表示 `Relationship` 编号，P1\~P10 表示`Property` 的编号。
 
-* Node 的存储示例图如下,每个`Node` 保存了第1个`Property` 和 第1个`Relationship`：&#x20;
-* 关系的存储示意图如下：  从示意图可以看出，从 Node-B 开始，可以通过关系的 next 指针，遍历Node-B 的所有关系，然后可以到达与其有关系的第1层Nodes,在通过遍历第1层Nodes的关系，可以达到第2层Node。
+* Node 的存储示例图如下,每个`Node` 保存了第1个`Property` 和 第1个`Relationship`：
+* 关系的存储示意图如下： 从示意图可以看出，从 Node-B 开始，可以通过关系的 next 指针，遍历Node-B 的所有关系，然后可以到达与其有关系的第1层Nodes,在通过遍历第1层Nodes的关系，可以达到第2层Node。
 
 ### 2.物理存储
 
@@ -137,7 +137,7 @@ MATCH (p { name: '山西省' })
 RETURN p
 ```
 
-&#x20;首先需要记住的是，查看执行计划应该从底端往上看。在这个过程中，我们注意到从最后一行开始的Rows列中的数字远高于给定的name属性为 '山西省' 的一个节点。在Operator列中我们看到AllNodeScan被使用到了，这意味着查询计划器扫描了数据库中的所有节点。
+首先需要记住的是，查看执行计划应该从底端往上看。在这个过程中，我们注意到从最后一行开始的Rows列中的数字远高于给定的name属性为 '山西省' 的一个节点。在Operator列中我们看到AllNodeScan被使用到了，这意味着查询计划器扫描了数据库中的所有节点。
 
 向上移动一行看Filter运算符，它将检查由AllNodeScan传入的每个节点的name属性。这看起来是一种非常低效的方式来查找 '山西省'。
 
@@ -149,7 +149,7 @@ MATCH (p:Person { name: 'Tom Hanks' })
 RETURN p
 ```
 
-&#x20;这次最后一行Rows的值已经降低了，这里没有扫描到之前扫描到的那些节点。NodeByLabelScan运算符表明首先在数据库中做了一个针对所有标签节点的线性扫描。一旦完成后，后续将针对所有节点执行Filter运算符，依次比较每个节点的name属性。
+这次最后一行Rows的值已经降低了，这里没有扫描到之前扫描到的那些节点。NodeByLabelScan运算符表明首先在数据库中做了一个针对所有标签节点的线性扫描。一旦完成后，后续将针对所有节点执行Filter运算符，依次比较每个节点的name属性。
 
 这在某些情况下看起来还可以接受，但是如果频繁通过name属性来查询标签，针对带有标签的节点的name属性创建索引将获得更好的性能。
 
@@ -165,7 +165,7 @@ MATCH (p:quhua1 { name: 'Tom Hanks' })
 RETURN p
 ```
 
-&#x20;查询计划下降到单一的行并使用了NodeIndexSeek运算符，它通过模式索引寻找到对应的节点。
+查询计划下降到单一的行并使用了NodeIndexSeek运算符，它通过模式索引寻找到对应的节点。
 
 ### 2.执行计划
 
@@ -183,7 +183,7 @@ Overall Aim: • Investigate the performance improvement of using index structur
 
 根据工作需要，对neo4j关于多标签以及索引结构在查询、导入和更新时的执行时间以及原理分析，以便进行性能改进。以下是分析结果：
 
-&#x20;在多标签检索时，优先命中有索引的标签。
+在多标签检索时，优先命中有索引的标签。
 
 多标签对数据导入影响很大。
 
@@ -204,7 +204,6 @@ If the query was on the same data, then the parts of the graph touched and retri
 ## 常用语句总结
 
 ```
-
 
 数据导入
 可以通过添加约束的方式来优化导入速度
@@ -246,7 +245,6 @@ LOAD CSV FROM "file:///rel民族-省市2.csv" as line match (from:区划{code:li
 
 修改标签和关系
 match(n)-[r:拥有]->(m) create(n)-[r2:包括]->(m) set r2=r with r delete r
-
 ```
 
 参考链接：https://sunxiang0918.cn/2015/06/27/neo4j-%E5%BA%95%E5%B1%82%E5%AD%98%E5%82%A8%E7%BB%93%E6%9E%84%E5%88%86%E6%9E%90/
