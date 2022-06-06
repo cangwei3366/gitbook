@@ -1,8 +1,8 @@
 # Table of contents
 
 * [💻 软工基础](README.md)
-  * [计算机网络](软工基础/计算机网络/README.md)
-  * [数据结构](软工基础/数据结构/README.md)
+  * [☁ 计算机网络](软工基础/计算机网络/README.md)
+  * [✊ 数据结构](软工基础/数据结构/README.md)
   * [算法](软工基础/算法/README.md)
 * [🍊 Java](java/README.md)
   * [面向对象与基础](java/面向对象与基础/面向对象概念.md)
@@ -10,7 +10,7 @@
     * [异常机制解析](java/面向对象与基础/异常机制详解.md)
     * [注解机制解析](java/面向对象与基础/注解机制详解.md)
     * [SPI机制解析](java/面向对象与基础/SPI机制详解.md)
-  * [集合框架](java/README.md)
+  *
   * [并发框架](java/并发框架/README.md)
     * [关键字：synchronized详解](java/并发框架/关键字-synchronized详解.md)
     * [关键字：volatile详解](java/并发框架/关键字-volatile详解.md)
@@ -93,5 +93,5 @@
   * [剑指 Offer算法](算法/剑指Offer算法.md)
 * [🛡 运维](运维/README.md)
   * [Shell命令](运维/shell-命令.md)
-* [✊ 产品 | 团队](产品-团队/README.md)
+* [产品 | 团队](产品-团队/README.md)
   * [产品 - 方法论](产品-团队/产品-方法论.md)
