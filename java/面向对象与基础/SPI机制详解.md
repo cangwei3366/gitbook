@@ -31,7 +31,7 @@ JDK中查找服务的实现的工具类是：`java.util.ServiceLoader`。
 
 ### 思维导图
 
-![](E:\gitbook\.gitbook\assets\javaspi.png)
+![](../../.gitbook/assets/javaspi.png)
 
 ### 实现原理
 
