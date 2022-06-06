@@ -22,9 +22,7 @@ HashMap实现了Map接口，允许key和value为null，除了未实现同步外�
 
 根据对冲突的处理方式不同，哈希表有两种实现方式，一种开放地址方式(Open addressing)，另一种是冲突链表方式(Separate chaining with linked lists)。**Java HashMap采用的是冲突链表方式**。
 
-
-
-![](../img/01_05_00.png)
+![](../../.gitbook/assets/01_05_00.png)
 
 
 
@@ -33,10 +31,6 @@ HashMap实现了Map接口，允许key和value为null，除了未实现同步外�
 将对象放入到*HashMap*或*HashSet*中时，有两个方法需要特别关心: `hashCode()`和`equals()`。**`hashCode()`方法决定了对象会被放到哪个`bucket`里，当多个对象的哈希值冲突时，`equals()`方法决定了这些对象是否是“同一个对象”**。所以，如果要将自定义的对象放入到`HashMap`或`HashSet`中，需要*@Override*`hashCode()`和`equals()`方法。
 
 ## HashMap实现
-
-#### 类关系
-
-
 
 #### 底层结构
 

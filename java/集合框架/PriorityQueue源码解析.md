@@ -20,9 +20,7 @@ JDK 1.8.0-144
 
  *PriorityQueue* 即优先队列
 
-
-
-![](../img/01_04_00.png)
+![](../../.gitbook/assets/01_04_00.png)
 
 ### 实现
 

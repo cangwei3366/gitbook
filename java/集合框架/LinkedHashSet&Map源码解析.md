@@ -20,11 +20,9 @@ JDK 1.8.0-144
 
 *LinkedHashMap*实现了*Map*接口，即允许放入`key`为`null`的元素，也允许插入`value`为`null`的元素。从名字上可以看出该容器是*linked list*和*HashMap*的混合体，也就是说它同时满足*HashMap*和*linked list*的某些特性。**可将LinkedHashMap看作采用linked list增强的HashMap。**
 
-![](../img/01_07_00.png)
+![](../../.gitbook/assets/01_07_00.png)
 
 ### 实现
-
-#### 类关系
 
 #### 底层结构
 
@@ -36,8 +34,6 @@ JDK 1.8.0-144
         }
     }
 ```
-
-
 
 ####  LinkedHashMap经典用法
 

@@ -27,7 +27,7 @@ WeakHashMap跟普通的HashMap不同，WeakHashMap的行为一定程度上基于
 
 ### 类依赖
 
-![](../img/01_08_00.png)
+![](../../.gitbook/assets/01_08_00.png)
 
 ### 底层结构
 
